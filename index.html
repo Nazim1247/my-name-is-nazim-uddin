@@ -4,8 +4,244 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my name is nazim uddin</title>
+    <style>
+        .section{
+            display: flex;
+            justify-content: center;
+            gap: 200px;
+            background-color: rgb(238, 233, 233);
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 2px 5px;
+           text-align: center;
+        }
+
+        .form{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 400px;
+            gap: 10px;
+        }
+        .form-1{
+            width: 390px;
+            margin-top: 10px;
+        }
+        .form-2{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .button{
+            margin-top: 10px;
+            background-color: salmon;
+            color: white;
+            padding: 2px 5px;
+            border-radius: 10px;
+            border: none;
+            width: 100px;
+            font-weight: bold;
+        }
+
+        .section-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            background-color: aliceblue;
+            margin: 20px 100px;
+            padding: 10px 30px;
+
+        }
+
+        .img-content{
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .img-1{
+            width: 50%;
+            /* height: 50%; */
+        }
+
+        .section-2{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px; 
+        }
+        .img-2{
+            position: relative;
+            border: 1px solid black;
+            border-radius: 10px;
+            
+        }
+        .img-3{
+            position: absolute;
+            top: 60%;
+            left: 10%;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .img-4{
+            position: absolute;
+            top: 75%;
+            left: 10%;
+            color: white;
+        }
+
+        @media screen and (max-width: 576px) {
+            .section{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            gap: 10px;
+            background-color: rgb(238, 233, 233);
+            padding: 20px;
+            /* margin: 10px 20px; */
+        }
+
+        .section-1{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+            gap: 50px;
+            background-color: aliceblue;
+            margin: 20px auto;
+            padding: 10px 20px;
+
+        }
+
+        .section-2{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px; 
+        }
+            
+        }
+    </style>
 </head>
 <body>
-    
+    <section class="section">
+        <div>
+           <h3>My New Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No:</th>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Namaj</td>
+                        <td>5-oakto</td>
+                        <td>foroj</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Roja</td>
+                        <td>1-mash</td>
+                        <td>foroj</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>hojj</td>
+                        <td>1-bar</td>
+                        <td>foroj</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>jhakat</td>
+                        <td>bosore-1</td>
+                        <td>foroj</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+        
+                </tfoot>
+            </table>
+        </div>
+        <div>
+            <h3>My New Form</h3>
+            <p>This is my new form i makeed this form so employeetly</p>
+            <form action="">
+               <div>
+                <div class="form">
+                    <input type="text" placeholder="kalima">
+                    <input type="text" placeholder="namaj">
+                    <input type="text" placeholder="rojha">
+                    <input type="text" placeholder="hojj">
+                   </div>
+                    <div class="form-2">
+                        <input class="form-1" type="text" placeholder="jhakat">
+                    <button class="button">Perform</button>
+                    </div>
+               </div>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="section-1">
+            <div>
+                <h3>My Name is Nazim Uddin</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maiores.</p>
+                <button class="button">Contact me</button>
+            </div>
+            <div>
+                <img style="width: 50%; height: 50%; margin-left: 100px;" src="image/hardy.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div class="img-content">
+                <h3>Meet our team</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, libero?</p>
+            </div>
+            <div class="section-2">
+                <div class="img-2">
+                    <img class="img-1" src="image/hardy.png" alt="">
+                    <h4 class="img-3">Handsome</h4>
+                    <p class="img-4">web developer</p>
+                </div>
+                <div class="img-2">
+                    <img class="img-1" src="image/hardy.png" alt="">
+                    <h4 class="img-3">Handsome</h4>
+                    <p class="img-4">web developer</p>
+                </div>
+                <div class="img-2">
+                    <img class="img-1" src="image/hardy.png" alt="">
+                    <h4 class="img-3">Handsome</h4>
+                    <p class="img-4">web developer</p>
+                </div>
+                <div class="img-2">
+                    <img class="img-1" src="image/hardy.png" alt="">
+                    <h4 class="img-3">Handsome</h4>
+                    <p class="img-4">web developer</p>
+                </div>
+                <div class="img-2">
+                    <img class="img-1" src="image/hardy.png" alt="">
+                    <h4 class="img-3">Handsome</h4>
+                    <p class="img-4">web developer</p>
+                </div>
+                <div class="img-2">
+                    <img class="img-1" src="image/hardy.png" alt="">
+                    <h4 class="img-3">Handsome</h4>
+                    <p class="img-4">web developer</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 </body>
 </html>
